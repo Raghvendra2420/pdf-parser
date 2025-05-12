@@ -47,7 +47,7 @@ app.post('/upload/pdf', upload.single('pdf'), async (req, res) => {
   return res.json({ message: 'uploaded' });
 });
 
-/*app.get('/chat', async (req, res) => {
+app.get('/chat', async (req, res) => {
   const userQuery = req.query.message;
 
   const embeddings = new OpenAIEmbeddings({
@@ -87,4 +87,4 @@ app.post('/upload/pdf', upload.single('pdf'), async (req, res) => {
   });
 });
 
-app.listen(8000, () => console.log(`Server started on PORT:${8000}`));*/
+app.listen(8000, () => console.log(`Server started on PORT:${8000}`));
